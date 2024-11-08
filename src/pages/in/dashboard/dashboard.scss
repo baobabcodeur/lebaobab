@@ -1,0 +1,39 @@
+// src/pages/dashboard.scss
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .dashboard-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    border: 1px solid #e0e0e0;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-box {
+    text-align: center;
+  }
+  
+  .stats-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .stats-box .stats-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .stats-box .stats-description {
+    color: #666;
+    font-size: 1rem;
+  }
+  

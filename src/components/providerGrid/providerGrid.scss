@@ -1,0 +1,82 @@
+.providerGrid {
+    display: flex;
+  
+    .sidebar {
+      width: 30rem;
+      padding: 10px;
+      background: #f7f7f7;
+      margin: 0 1rem 0 1rem;
+      border-radius: 15px;
+      
+  
+      input {
+        padding: 0.5rem;
+        border-radius: 15px;
+        width: 20rem;
+        margin-bottom: 1rem;
+        
+      }
+  
+      .filter-options {
+        h3 {
+          margin-top: 1rem;
+        }
+  
+        label {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 5px 0;
+
+        }
+  
+        input[type="range"] {
+          width: 20rem;
+        }
+
+        
+
+        
+      }
+    }
+  
+    .grid-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+      }
+  
+      .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+  
+        button {
+          padding: 0.5rem 1rem;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+  

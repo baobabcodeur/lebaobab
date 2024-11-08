@@ -1,0 +1,88 @@
+@import "../../../styles/variable.scss";
+
+
+.welcome {
+    padding: 0.5rem 0;
+   
+   
+    .sMenu {
+        background-color: white;
+        width: 100vw;
+        height: 2rem;
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        position: fixed;
+        margin-top: 3.6rem;
+        align-items: center;
+        
+         a {
+            text-decoration: none;
+            color:  $second-color;
+
+            &:hover {
+                color: $soft-color;
+                font-weight: bold;
+            }
+         }
+    }
+
+
+    .container {
+       max-width: 100%;
+        display: flex;
+       justify-content: center;
+       gap: 7rem;
+      flex-wrap: wrap;
+       margin: 7rem 0;
+      
+       h2 {
+        font-weight: bolder;
+        font-size: 2rem;
+       }
+        
+       .info {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+       
+       
+        ul{
+            max-width: 35rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+        }
+        .btn {
+            display: flex;
+            gap: 1rem;
+            margin-left: 1rem;
+        }
+        span {
+            color: $soft-color;
+        }
+       }
+      
+      img {
+        width: 30rem;
+        height: 30rem;
+      }
+     
+       
+    }
+    .sep {
+display: flex;
+justify-content: center;
+margin: 3rem 0;
+        .separator {
+        width: 40rem;
+        height: 1rem;
+        background-color: $soft-color;
+        text-align: center;
+    } 
+    }
+   
+   
+}

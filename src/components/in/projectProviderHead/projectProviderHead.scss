@@ -1,0 +1,22 @@
+.projectProviderHead {
+    display: flex;
+    gap: 15px;
+  
+    a {
+      color: #333; // Couleur par défaut du lien
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+  
+      &:hover {
+        background-color: #f0f0f0; // Style au survol
+      }
+    }
+  
+    a.active {
+      color: #fff;
+      background-color: #007bff; // Couleur de fond pour le lien actif
+      font-weight: bold;
+    }
+  }
+  

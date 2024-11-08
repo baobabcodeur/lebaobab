@@ -1,0 +1,71 @@
+@import "../../../styles/variable.scss";
+
+
+.publish {
+  padding-top: 5rem ;
+    .conteneurP {
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 5rem 0;
+        .border {
+
+            height: 30rem;
+            width: 10rem;
+            background-color: $soft-color;
+
+        }
+
+        .cForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                width: 60rem;
+                height: 50rem;
+                border: 2px solid black;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+
+                p {
+                    max-width: 50rem;
+                    
+                }
+
+                form {
+                    div {
+                        display: flex;
+                       
+                        justify-content: space-around;
+                        align-items: flex-start;
+
+                        label {
+                            width: 30rem;
+                            text-align: left;
+                            
+                        }
+                        input  , select {
+                            width: 15rem;
+                            height: 1.5rem;
+                            margin: 1rem 0;
+                        }
+
+
+                        textarea {
+
+                            width: 15rem;
+                            height: 3rem;
+                            margin: 1rem 0;
+                        }
+                    }
+                    button {
+                        padding: 0.5rem;
+                        border-radius: 10px;
+                        color: white;
+                        background-color: $second-color;
+                    }
+                }
+        }
+    }
+}

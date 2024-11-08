@@ -1,0 +1,89 @@
+.groupTodo {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+
+  .header {
+    display: flex;
+    justify-content: space-between; /* Espace entre le titre et le bouton */
+    align-items: center; /* Aligne le contenu verticalement */
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .add-task-button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    input,
+    textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+
+      &:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    }
+  }
+
+  .task-list {
+    display: grid; /* Utilisation de la grille pour les tâches */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grille responsive */
+    gap: 15px; /* Espace entre les tâches */
+
+    .task-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #fff;
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #666;
+      }
+
+      button {
+        padding: 5px 10px;
+        background-color: #dc3545; /* Couleur rouge pour supprimer */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #c82333; /* Teinte plus sombre au survol */
+        }
+      }
+    }
+  }
+}

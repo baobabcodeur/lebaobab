@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -24,6 +25,11 @@
   color: white;
 }
 
+.Foot {
+
+margin-top: 5rem;
+
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +41,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.admin-container {
+ height: 80vh 
+}
+.admin-main {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.fixe-projet, .main-project {
+ 
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up the full viewport height */
+}
+
+.main {
+  flex: 1; /* Allow main content to grow and take available space */
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* This makes the container grow */
+  overflow-y: auto; /* Allows scrolling if content exceeds the height */
+}
+
+/* Footer styling */
+footer {
+  background-color: #f1f1f1; /* Example footer color */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center footer text */
 }

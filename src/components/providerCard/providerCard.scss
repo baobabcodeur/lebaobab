@@ -1,0 +1,63 @@
+.providerCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .provider-info {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        h2 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 0.5rem 0;
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: #777;
+            margin: 0.5rem 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0.5rem 0;
+            line-height: 1.4;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #388e3c;
+            }
+        }
+    }
+}

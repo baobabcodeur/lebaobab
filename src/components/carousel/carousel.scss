@@ -1,0 +1,47 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10px;
+    margin: 3rem 0;
+    // background-color: #f4f4f4;
+    // border-bottom: 1px solid #ddd;
+
+    .sidebar__images {
+        display: flex;
+        gap: 40px;
+
+        .sidebar__image {
+            // width: 17rem;
+            // height: 17rem;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+          }
+      }
+
+
+    .sidebar__button {
+        background-color: #333;
+        color: #fff;
+        font-size: 1.2rem;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+        outline: none;
+        transition: background-color 0.3s;
+        border-radius: 5px;
+
+        &:disabled {
+            background-color: #999;
+  cursor: not-allowed;
+          }
+          
+          &:hover:enabled {
+            background-color: #555;
+          }
+      }
+
+}

@@ -1,0 +1,38 @@
+
+@import "../../styles/variable.scss";
+
+.head {
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    z-index: 1000;
+    .logo {
+       
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 0 20px;
+        border-bottom: 3px solid $second-color ;
+        h1 {
+            padding: 10px;
+            margin: 0px;
+            span {
+                color: $soft-color;
+            }
+        }
+        .connexion {
+            display: flex;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: $soft-color;
+                font-weight: bold;
+            }
+        }
+          }
+}

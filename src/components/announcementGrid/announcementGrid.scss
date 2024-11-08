@@ -1,0 +1,86 @@
+.announcementGrid {
+  display: flex;
+
+  .sidebar {
+    width: 200px;
+    padding: 5rem 2rem;
+    border-radius: 15px;
+    background: #f7f7f7;
+    margin: 0 20px;
+
+    input {
+      padding: 0.5rem;
+      border-radius: 15px;
+
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+
+  .grid-wrapper {
+    position: relative;
+    width: 100%;
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 10px;
+      padding: 20px 5rem;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .scroll-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1;
+      font-size: 1.5rem;
+      line-height: 1;
+
+      &.left {
+        left: -20px;
+      }
+
+      &.right {
+        right: -20px;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      button {
+        margin: 0 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #007bff;
+        background-color: #fff;
+        color: #007bff;
+        cursor: pointer;
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// Message.scss
+.message {
+    max-width: 60%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+  
+    &.message-current-user {
+      align-self: flex-end;
+      background-color: #007bff;
+      color: #fff;
+    }
+  
+    .message-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+  
+      .message-user {
+        font-weight: bold;
+        color: inherit;
+      }
+  
+      .message-timestamp {
+        font-size: 0.75rem;
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+  
+    .message-content {
+      font-size: 1rem;
+      color: inherit;
+    }
+  }
+  

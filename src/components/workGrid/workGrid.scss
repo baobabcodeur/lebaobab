@@ -1,0 +1,77 @@
+.workGrid {
+    display: flex;
+  
+    .sidebar {
+      width: 250px;
+      padding: 5rem 3rem;
+      background: #f7f7f7;
+      margin-right: 20px;
+      margin: 0  2rem 0 1rem;
+
+      border-radius: 15px;
+
+
+      .filter-options {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        label {
+            display: flex;
+            gap: 1rem;
+        }
+      }
+  
+      
+      input {
+        padding: 0.5rem;
+        border-radius: 15px;
+  
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+  
+    .grid-wrapper {
+      flex: 1;
+      position: relative;
+  
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+        overflow: hidden;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+  
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+  
+        button {
+          margin: 0 10px;
+          padding: 5px 10px;
+          border: none;
+          border-radius: 5px;
+          background: #007bff;
+          color: white;
+          cursor: pointer;
+  
+          &:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+          }
+        }
+  
+        span {
+          align-self: center;
+        }
+      }
+    }
+  }
+  

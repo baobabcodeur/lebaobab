@@ -1,0 +1,52 @@
+@import "../../../styles/variable.scss";
+
+.footer {
+    border-top: 2px solid $second-color ;
+    border-bottom: 2px solid $second-color ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    .container {
+        width: 100vw;
+display: flex;
+justify-content: space-around;
+padding:  3rem 0;
+        .plateforme ,.services, .mentions ,.nous {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    .message {
+        font-size: 1rem;
+        max-width: 50rem;
+        margin: 10px 0;
+    }
+
+    .social {
+        height: 3rem;
+        width: 100vw;
+        background-color: $soft-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        div {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+
+            img {
+                height: 30px;
+                width: 35px;
+            }
+        }
+    }
+   
+    .sign {
+         padding: 1rem 0;
+    }
+}

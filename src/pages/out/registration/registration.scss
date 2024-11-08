@@ -1,0 +1,57 @@
+@import "../../../styles/variable.scss";
+
+.registration {
+    
+    height: 100vh;
+    width: 100vw;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+  
+  .logo {
+  
+      display: flex;
+      flex-direction: column;
+      
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      h1 {
+          font-size: 50px;
+          font-weight: 20px;
+          span {
+              color: $soft-color;
+          }
+      }
+      p {
+          
+          font-size: 12px;
+      }
+  
+  }
+  
+  .form {
+          border: 2px solid black;
+          height: 25rem;
+          width: 20rem;
+          border-radius: 15px;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+  
+          .accord {
+            display: flex;
+            max-width: 12rem;
+          }
+          a {
+              font-size: 12px;
+          }
+  }
+  
+}
